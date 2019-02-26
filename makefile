@@ -1,9 +1,12 @@
+OUTPUT = "${PWD}/output"
+
 build:
-	cd src; npm run build
-	cd src; dotnet build
+	cd src; npm run publish
+	cd src; dotnet publish -c Release -o $(OUTPUT) Time.Web/
 	
 clean:
 	cd src; dotnet clean
+	rm -Rf $(OUTPUT)
 
 restore:
 	cd src; npm install
