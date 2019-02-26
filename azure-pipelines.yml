@@ -11,5 +11,7 @@ pool:
 
 steps:
 - script: |
-    make build
+    make build OUTPUT="$(Build.ArtifactStagingDirectory)"
   displayName: 'Build a deployment artifact'
+
+- task: PublishBuildArtifacts@1
