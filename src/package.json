@@ -4,7 +4,7 @@
   "description": "time tracking util",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "echo shold build"
   },
   "author": "",
   "license": "MIT",
