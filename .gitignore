@@ -506,3 +506,4 @@ ASALocalRun/
 healthchecksdb
 
 # End of https://www.gitignore.io/api/node,visualstudio,visualstudiocode,rider
+.vscode/
